@@ -1,0 +1,13 @@
+app = "telegram-exam-bot"
+kill_signal = "SIGINT"
+kill_timeout = 5
+
+[env]
+PORT = "8080"
+
+[experimental]
+cmd = ["python", "bot.py"]
+
+[processes]
+app = ""
+worker = "python bot.py"
